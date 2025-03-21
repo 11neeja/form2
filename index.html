@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Details Entry Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Case Details Entry</h1>
+    <h3>Please fill in the details of the case below.</h3>
+    <form id="caseForm">
+      <div class="form-group">
+        <label for="caseNumber">Case Number*</label>
+        <input type="text" id="caseNumber" name="caseNumber" required />
+      </div>
+      <div class="form-group">
+        <label for="caseTitle">Case Title*</label>
+        <input type="text" id="caseTitle" name="caseTitle" required />
+      </div>
+      <div class="form-group">
+        <label for="caseType">Case Type*</label>
+        <select id="caseType" name="caseType" required>
+          <option value="">Select Case Type</option>
+          <option value="civil">Civil</option>
+          <option value="criminal">Criminal</option>
+          <option value="family">Family</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="dateFiled">Date Filed*</label>
+        <input type="date" id="dateFiled" name="dateFiled" required />
+      </div>
+      <div class="form-group">
+        <label for="plaintiffName">Plaintiff Name*</label>
+        <input type="text" id="plaintiffName" name="plaintiffName" required />
+      </div>
+      <div class="form-group">
+        <label for="defendantName">Defendant Name*</label>
+        <input type="text" id="defendantName" name="defendantName" required />
+      </div>
+      <div class="form-group">
+        <label for="caseDescription">Case Description*</label>
+        <textarea id="caseDescription" name="caseDescription" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="supportingDocuments">Supporting Documents</label>
+        <input type="file" id="supportingDocuments" name="supportingDocuments" />
+      </div>
+      <div class="form-group">
+        <label for="additionalNotes">Additional Notes</label>
+        <textarea id="additionalNotes" name="additionalNotes" rows="2"></textarea>
+      </div>
+      <div class="button-group">
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
